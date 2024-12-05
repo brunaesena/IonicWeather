@@ -10,11 +10,11 @@ Este é um aplicativo de previsão do tempo desenvolvido utilizando **Ionic** e 
 ## Como baixar o repositório
 1. Clone o repositório utilizando o comando:
 
-   ```git clone https://github.com/brunaesena/IonicWeather.git```
+   ``git clone https://github.com/brunaesena/IonicWeather.git``
 
 2. Navegue até o diretório do projeto:
 
-cd weather-app
+   ``cd weather-app``
 
 3. Instale as dependências necessárias com o comando:
 
