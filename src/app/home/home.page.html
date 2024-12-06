@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Previsão do Tempo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+
+    <img src="assets/logo.png" alt="Logo" class="logo"> 
+
+    <!-- Formulário -->
+    <form (submit)="buscarClima()" class="">
+      <ion-item>
+        <ion-input 
+          type="text" 
+          placeholder="Digite uma cidade" 
+          [(ngModel)]="cidade" 
+          name="cidade">
+        </ion-input>
+      </ion-item>
+      <ion-button expand="block" type="submit">Buscar</ion-button>
+    </form>
+
+    <!-- Aviso -->
+    <div *ngIf="aviso" class="aviso">{{ aviso }}</div>
+
+    <ion-button expand="block" (click)="obterLocalizacao()">Usar Minha Localização</ion-button>
+
+    <!-- Resultado -->
+    <div class="resultado" *ngIf="resultado">
+      <div class="informacoes">
+        <img [src]="resultado.icone" alt="Ícone do Clima" />
+        <div class="titulo">{{ resultado.titulo }}</div>
+        <div class="temperatura">{{ resultado.temperatura }}</div>
+        <div class="descricao">{{ resultado.descricao }}</div>
+        <div class="vento">Vento: {{ resultado.vento }}</div>
+      </div>
+    </div>
+
+    <!-- Previsão Horária -->
+    <div *ngIf="previsaoHoraria && previsaoHoraria.length > 0">
+      <h2>Previsão por Hora</h2>
+      <div class="previsao-horaria">
+        <div *ngFor="let item of previsaoHoraria" class="horario">
+          <img [src]="item.icone" alt="Ícone" />
+          <div>{{ item.hora }}</div>
+          <div>{{ item.temperatura }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Previsão Diária -->
+    <div *ngIf="previsaoDiaria && previsaoDiaria.length > 0">
+      <h2>Previsão Diária</h2>
+      <div class="previsao-diaria">
+        <div *ngFor="let dia of previsaoDiaria" class="dia">
+          <img [src]="dia.icone" alt="Ícone" />
+          <div>{{ dia.dia }}</div>
+          <div>{{ dia.descricao }}</div>
+          <div>{{ dia.temperatura }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

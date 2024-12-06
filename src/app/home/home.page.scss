@@ -1,0 +1,229 @@
+/* Fundo azul gradiente para toda a página */
+ion-content {
+  --background: linear-gradient(to bottom, #007FFF, #2a5298);
+  color: white;
+}
+
+/* Cabeçalho com gradiente lilás e texto centralizado */
+ion-header {
+  ion-toolbar {
+    --background: linear-gradient(to right, #C8A2C8, #dda0dd); /* Lilás gradiente */
+    color: white; /* Texto branco */
+    text-align: center; /* Centralizar texto */
+    font-weight: bold;
+  }
+
+  ion-title {
+    font-size: 1.5rem;
+  }
+}
+
+.logo {
+  width: 100px; /* Define a largura da imagem */
+  height: auto; /* Ajusta a altura proporcionalmente */
+  z-index: 10; /* Garante que a logo esteja acima dos outros elementos */
+}
+
+
+/* Container principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Aviso */
+.aviso {
+  background: rgba(255, 255, 255, 0.2); /* Fundo translúcido */
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Resultado */
+.resultado {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.informacoes img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.temperatura {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.vento {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Formulário de busca */
+form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+ion-item {
+  --background: rgba(255, 255, 255, 0.3);
+  --border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+ion-input {
+  color: white;
+}
+
+ion-button {
+  --background: linear-gradient(to right, #4caf50, #81c784); /* Gradiente verde */
+  --color: white;
+  font-weight: bold;
+}
+
+.previsao-horaria, .previsao-diaria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.horario, .dia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100px;
+}
+
+/* Títulos */
+h2 {
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Previsão por Hora */
+.previsao-horaria {
+  display: flex;
+  overflow-x: auto; /* Habilita rolagem horizontal */
+  gap: 10px; /* Espaço entre os itens */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1); /* Fundo transparente levemente escuro */
+  border-radius: 8px;
+}
+
+.horario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 80px; /* Largura mínima para cada item */
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo para diferenciar itens */
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Ícone da previsão */
+.horario img,
+.dia img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+/* Títulos */
+h2 {
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Previsão por Hora */
+.previsao-horaria {
+  display: flex;
+  overflow-x: auto; /* Habilita rolagem horizontal */
+  gap: 10px; /* Espaço entre os itens */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1); /* Fundo transparente levemente escuro */
+  border-radius: 8px;
+}
+
+.horario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 80px; /* Largura mínima para cada item */
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo para diferenciar itens */
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Ícone da previsão */
+.horario img,
+.dia img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+/* Previsão Diária */
+.previsao-diaria {
+  display: flex;
+  overflow-x: auto; /* Habilita rolagem horizontal */
+  gap: 10px; /* Espaço entre os itens */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1); /* Fundo transparente levemente escuro */
+  border-radius: 8px;
+}
+
+.dia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 80px; /* Largura mínima para cada item */
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo para diferenciar itens */
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+}

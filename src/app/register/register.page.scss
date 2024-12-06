@@ -1,0 +1,45 @@
+/* Geral para as duas páginas de login e registro */
+ion-header {
+  --background: #003366;  /* Cor de fundo do cabeçalho */
+  --color: white;
+}
+
+.login-container, .register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo-img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-btn, .register-btn {
+  margin-top: 20px;
+  background-color: #003366;
+  color: white;
+}
+
+.text-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link, .login-link {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link:hover, .login-link:hover {
+  text-decoration: underline;
+}
