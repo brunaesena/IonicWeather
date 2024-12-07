@@ -30,7 +30,9 @@ log.txt
 /bazel-out
 
 # Node
+
 /node_modules
+node_modules
 npm-debug.log
 yarn-error.log
 
@@ -43,8 +45,12 @@ yarn-error.log
 .settings/
 *.sublime-project
 *.sublime-workspace
+.eslintrc.json
+.editorconfig
+.browserslistrc
 
 # Visual Studio Code
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -54,6 +60,7 @@ yarn-error.log
 
 
 # Miscellaneous
+.angular
 /.angular
 /.angular/cache
 .sass-cache/
